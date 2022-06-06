@@ -4,9 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.scss";
 
 const Header: React.FC = () => {
-  const { pathname, hash } = useLocation();
-  console.log(hash);
-  console.log(pathname);
+  const { hash } = useLocation();
+
   const routes = [
     {
       name: "About me",

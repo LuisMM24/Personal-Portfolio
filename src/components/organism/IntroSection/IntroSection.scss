@@ -1,0 +1,8 @@
+@use "../../../sass/abstracts/variables" as v;
+.roleText {
+  color: v.$text-blue;
+}
+
+.introSection {
+  margin: 5em 0;
+}
