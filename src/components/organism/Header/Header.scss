@@ -1,5 +1,6 @@
 @use "../../../sass/abstracts/index.scss" as v;
 .mainHeader {
+  padding: 0.5em 1em;
   display: flex;
   justify-content: space-between;
 }
@@ -16,6 +17,10 @@
     li {
       cursor: pointer;
       margin: 0 2em;
+    }
+    .navigatorLinks {
+      text-decoration: none;
+      color: inherit;
     }
     .selected {
       border-bottom: 2.5px solid v.$lightestBlue;

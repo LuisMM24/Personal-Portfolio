@@ -1,7 +1,23 @@
+// pathname to navigator
+import { Link, useLocation } from "react-router-dom";
 // styles
 import "./Header.scss";
 
 const Header: React.FC = () => {
+  const { pathname, hash } = useLocation();
+  console.log(hash);
+  console.log(pathname);
+  const routes = [
+    {
+      name: "About me",
+      path: "about",
+      selected: hash === "" || hash === "#about",
+    },
+    { name: "Skills", path: "skills", selected: hash === "#skills" },
+    { name: "Projects", path: "projects", selected: hash === "#projects" },
+    { name: "Contact", path: "contact", selected: hash === "#contact" },
+  ];
+
   return (
     <header className="mainHeader">
       <h1 className="headerTitle">
@@ -10,10 +26,13 @@ const Header: React.FC = () => {
       </h1>
       <nav className="headerNav">
         <ul>
-          <li className="selected">About me</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          {routes.map((route) => (
+            <li className={route.selected ? "selected" : ""}>
+              <Link className="navigatorLinks" to={`#${route.path}`}>
+                {route.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
