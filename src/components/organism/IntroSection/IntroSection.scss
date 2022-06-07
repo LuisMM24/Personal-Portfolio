@@ -1,8 +1,28 @@
 @use "../../../sass/abstracts/variables" as v;
 .roleText {
-  color: v.$text-blue;
+  color: v.$lightestBlue;
+  text-transform:uppercase;
 }
 
 .introSection {
+  justify-content: space-between;
+  align-items: center;
   margin: 5em 0;
+  .introFullName{
+    font-size: 2.5rem;
+    color:white;
+  }
+  .buttonWrapper{
+    margin-top:1.5em;
+    max-width: 50%;
+  }
+}
+
+.introductionArticle{
+  max-width: 650px;
+}
+.introImageContainer{
+  img{
+    width:350px;
+  }
 }

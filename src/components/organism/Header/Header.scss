@@ -1,6 +1,7 @@
 @use "../../../sass/abstracts/index.scss" as v;
 .mainHeader {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .tagText {
@@ -8,6 +9,7 @@
 }
 .headerTitle {
   font-family: v.$code;
+  font-size: 1.25rem;
 }
 .headerNav {
   ul {

@@ -5,7 +5,9 @@
 body {
   font-family: a.$poppins;
   color: a.$text-gray;
-  padding: 3em;
+  max-width: 1200px;
+  padding:2em;
+  margin:0 auto;
   background: rgb(48, 63, 83);
   background: radial-gradient(
     circle,
