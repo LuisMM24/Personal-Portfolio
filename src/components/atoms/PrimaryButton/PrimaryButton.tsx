@@ -2,12 +2,13 @@ import React from "react"
 import "./PrimaryButton.scss"
 
 interface Props {
-    children: JSX.Element | JSX.Element[] | string | string[]
+    children: JSX.Element | JSX.Element[] | string | string[],
+    handleClick: () => void
 }
 
-const PrimaryButton: React.FC<Props> = ({ children }) => {
+const PrimaryButton: React.FC<Props> = ({ children, handleClick }) => {
     return (
-        <button className="primaryButton">{children}</button>
+        <button onClick={handleClick} className="primaryButton">{children}</button>
     )
 }
 
