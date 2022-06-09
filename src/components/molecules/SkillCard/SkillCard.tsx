@@ -8,6 +8,8 @@ import css from "../../../assets/img/skills/css.png"
 import react from "../../../assets/img/skills/react.png"
 import redux from "../../../assets/img/skills/redux.png"
 import nodejs from "../../../assets/img/skills/nodejs.png"
+import express from "../../../assets/img/skills/ExpressJS.png"
+import mongodb from "../../../assets/img/skills/mongodb.png"
 
 interface Props {
     name: string,
@@ -26,7 +28,9 @@ const SkillCard: React.FC<Props> = ({ name, technology }) => {
         css,
         react,
         redux,
-        nodejs
+        nodejs,
+        express,
+        mongodb
     }
     return (
         <div className='flex skillCardWrapper'>

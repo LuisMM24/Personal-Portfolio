@@ -1,0 +1,27 @@
+@use "../../../sass/abstracts/variables" as v;
+.projectCardWrapper{
+    background-color:v.$bg-darkBlue-light;
+    border-radius:1rem;
+    padding:2em;
+    max-width: 350px;
+    
+    flex-direction: column;
+    gap:1em;
+    img{
+        width: 300px;
+        object-fit: contain;
+    }
+    .tagsWrapper{
+        gap:1em;
+        flex-wrap: wrap;
+    }
+    .tagContainer{
+        border:1px solid v.$lightestBlue;
+        background-color: inherit;
+        color:v.$lightestBlue;
+        padding:0.5em 1em;
+        font-size: 0.75rem;
+        border-radius:50px;
+        text-align: center;
+    }
+}

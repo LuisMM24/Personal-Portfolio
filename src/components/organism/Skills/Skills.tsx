@@ -9,9 +9,8 @@ const Skills: React.FC = () => {
     const [toggleAllSkills, setToggleAllSkills] = useState<boolean>(false)
     return (
         <section className='skillSection'>
-            <div className='skillHeader flex'>
-                <HeadTitle>Skills</HeadTitle>
-            </div>
+            <HeadTitle position='center'>Skills</HeadTitle>
+
             {!toggleAllSkills && (
                 <button className='seeMoreButton' onClick={() => setToggleAllSkills(true)} type="button">
                     see more skills
@@ -27,6 +26,8 @@ const Skills: React.FC = () => {
                         <SkillCard name="Typescript" technology='ts' />
                         <SkillCard name="Redux" technology='redux' />
                         <SkillCard name="NodeJS" technology='nodejs' />
+                        <SkillCard name="Express" technology='express' />
+                        <SkillCard name="MongoDB" technology='mongodb' />
                     </>
                 )}
             </article>
