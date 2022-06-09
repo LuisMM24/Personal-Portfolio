@@ -2,7 +2,7 @@ import React from "react"
 import "./PrimaryButton.scss"
 
 interface Props {
-    children: JSX.Element | JSX.Element[] | string | string[],
+    children: children
     handleClick: () => void
 }
 

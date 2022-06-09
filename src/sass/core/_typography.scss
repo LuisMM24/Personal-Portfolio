@@ -2,3 +2,9 @@ $light: 300;
 $normal: 400;
 $semibold: 500;
 $bold: 700;
+
+
+.bolderText{
+    font-weight: $bold;
+    color:white;
+}

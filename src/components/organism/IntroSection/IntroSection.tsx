@@ -13,7 +13,7 @@ const IntroSection: React.FC = () => {
         <p>Welcome to my personal portfolio! Here you can see who I am, some projects that I've been worked on over the last 8 months, my skill set, and my contact!
         </p>
         <div className="buttonWrapper">
-          <Link to="/src/assets/img/Luis Molina Mateo.pdf" target="_blank" className="primaryButton">Download CV</Link>
+          <Link to="/src/assets/Luis Molina Mateo.pdf" target="_blank" className="primaryButton">Download CV</Link>
         </div>
 
       </article>
