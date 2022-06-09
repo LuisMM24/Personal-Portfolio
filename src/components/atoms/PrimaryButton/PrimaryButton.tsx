@@ -8,7 +8,7 @@ interface Props {
 
 const PrimaryButton: React.FC<Props> = ({ children, handleClick }) => {
     return (
-        <button onClick={handleClick} className="primaryButton">{children}</button>
+        <button type="button" onClick={handleClick} className="primaryButton">{children}</button>
     )
 }
 
