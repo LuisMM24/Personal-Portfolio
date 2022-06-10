@@ -1,12 +1,34 @@
 @use "../../../sass/abstracts/variables" as v;
+
 .projectCardWrapper{
+    position:relative;
+    &::after{
+        position:absolute;
+        z-index: -1;
+        top:-10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        content:"";
+        background-color: aqua;
+        width:80%;
+        height: 20px;
+        border-radius:10px 10px 0 0 ;
+    }
     background-color:v.$bg-darkBlue-light;
     border-radius:1rem;
     padding:2em;
     max-width: 350px;
-    
+    height: 350px;
     flex-direction: column;
     gap:1em;
+    .ellipsisText{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-height:70px;
+    }
     img{
         width: 300px;
         object-fit: contain;

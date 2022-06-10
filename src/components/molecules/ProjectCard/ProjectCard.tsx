@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PrimaryButton from '../../atoms/PrimaryButton/PrimaryButton'
 import ProjectTag from '../../atoms/ProjectTag/ProjectTag'
 import "./ProjectCard.scss"
 
@@ -11,6 +12,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ title, image, children, technologies }) => {
     const [isReversedCard, setIsReversedCard] = useState<boolean>(false)
+
     return (
         <div
             onMouseLeave={() => setIsReversedCard(false)}
@@ -19,11 +21,14 @@ const ProjectCard: React.FC<Props> = ({ title, image, children, technologies }) 
         >
             {!isReversedCard && <img src={image} alt="project image" />}
             <h4>{title}</h4>
-            <p>{children}</p>
+            <p className={!isReversedCard ? "ellipsisText" : ""}>{children}</p>
             {isReversedCard && (
-                <div className='tagsWrapper flex'>
-                    {technologies.map(tech => <ProjectTag>{tech}</ProjectTag>)}
-                </div>
+                <>
+                    <div className='tagsWrapper flex'>
+                        {technologies.map(tech => <ProjectTag>{tech}</ProjectTag>)}
+                    </div>
+                    <PrimaryButton handleClick={() => window.open("https://niftymusic.netlify.app/")}>Visit</PrimaryButton>
+                </>
             )}
 
 

@@ -9,7 +9,7 @@ const Projects = () => {
             <HeadTitle position='center'>Projects</HeadTitle>
             <ProjectCard title='Nifty music app'
                 image={nifty}
-                technologies={["React", "Redux", "SASS", "NodeJS", "Laravel", "Mysql", "MongoDB"]}
+                technologies={["React", "Redux", "SASS", "NodeJS", "Laravel", "MongoDB"]}
 
             >
                 Nifty is a website where you can listen to music,

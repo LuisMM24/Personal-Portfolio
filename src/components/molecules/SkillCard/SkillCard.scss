@@ -4,10 +4,10 @@
     flex-direction: column;
     align-items: center;
     gap:1em;
-    transition:.5s ease-in-out;
+    transition:.25s ease-out;
     img{
         width:60px;
-        transition:.5s ease-in-out;
+        transition:.25s ease-out;
     }
    
     &:hover{

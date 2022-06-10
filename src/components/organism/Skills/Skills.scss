@@ -9,20 +9,24 @@
     justify-content: center;
 }
 .seeMoreButton{
-    position: absolute;
-    right: 0;
-    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1em;
+    justify-content: center;
     background-color: initial;
     color:white;
     border:none;
     cursor: pointer;
     &:hover{
         text-decoration: underline;
-        
+    }
+    img{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(104%) contrast(107%);
+        width:30px;
     }
 }
 .skillCardsContainer{
-    margin-top:1.5em ;
     flex-wrap: wrap;
     justify-content: space-around;
 }
