@@ -8,7 +8,7 @@ import "./Skills.scss"
 const Skills: React.FC = () => {
     const [toggleAllSkills, setToggleAllSkills] = useState<boolean>(false)
     return (
-        <section className='skillSection'>
+        <section id="skills" className='skillSection'>
             <HeadTitle position='center'>Skills</HeadTitle>
 
             {!toggleAllSkills && (

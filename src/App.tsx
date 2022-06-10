@@ -5,14 +5,19 @@ import Header from "./components/organism/Header/Header";
 import IntroSection from "./components/organism/IntroSection/IntroSection";
 import Projects from "./components/organism/Projects/Projects";
 import Skills from "./components/organism/Skills/Skills";
+import BackgroundBubbles from "./components/templates/BackgroundStars/BackgroundBubbles";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
-        <IntroSection />
-        <About />
+        <div className="bgGradient">
+          <Header />
+          <IntroSection />
+        </div>
+        <BackgroundBubbles>
+          <About />
+        </BackgroundBubbles>
         <Skills />
         <Projects />
       </BrowserRouter>
